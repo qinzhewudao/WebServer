@@ -31,7 +31,7 @@ public class toStringServer {
         PropertyHandlerMapping phm = new PropertyHandlerMapping(); //create Handler instance
         try
         {
-            phm.addHandler("int", toString.class);
+            phm.addHandler("nickname", toString.class);
         }
         catch (Exception e)
         {

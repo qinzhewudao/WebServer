@@ -8,7 +8,7 @@ public class toString {
     static String[] ten = {"Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
     static String[] big = {"", "Thousand", "Million", "Billion", "Trillion", "Quadrillion", "Sextillion", "Septillion", "Octillion", "Nonillion"};
   
-   public static  String toString(int x) {
+   public  String toString(int x) {
        if (x == 0) {     // special cases  
            return "Zero";
        }else if(x<0){
@@ -38,7 +38,7 @@ public class toString {
    } 
      
    // 将三位数转换为string
-   public static String numUnder100(int num) {
+   public  String numUnder100(int num) {
        String str="";
         //100以下的数字需要四种情况处理，十分麻烦。
        if (num >= 100){
@@ -62,14 +62,4 @@ public class toString {
        return str;
    }
    
-   public static void main(String[] args)
-   {
-       
-
-	   Scanner scanner = new Scanner(System.in);
-		
-	   int input = scanner.nextInt();
-       String str = toString(input);
-       System.out.println(str);
-   }
 }

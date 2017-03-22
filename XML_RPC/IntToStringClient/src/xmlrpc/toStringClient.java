@@ -55,7 +55,7 @@ public class toStringClient extends JFrame{
         client.setConfig(config);
         try
         {
-        		result = (String) client.execute("int.toString", new Object[] { radius });
+        		result = (String) client.execute("nickname.toString", new Object[] { radius });
         }
         catch (Exception e)
         {
